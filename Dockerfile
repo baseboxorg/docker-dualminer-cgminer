@@ -11,7 +11,8 @@ RUN apt-get update && \
 
 RUN git clone https://github.com/kangaderoo/dualminer-cgminer.git /dualminer-cgminer && \
     cd /dualminer-cgminer && \
-    chmod +x autogen.sh configure && \
+    chmod +x autogen.sh && \
+    chmod +x configure && \
     ./autogen.sh && \
     ./configure --enable-dualminer --enable-scrypt --disable-opencl && \
     make
