@@ -9,7 +9,7 @@ RUN apt-get update && \
     libpthread-stubs0-dev yasm nano screen && \
     rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/kangaderoo/dualminer-cgminer.git /dualminer-cgminer && \
+RUN git clone https://github.com/dualminer/dualminer-cgminer.git /dualminer-cgminer && \
     cd /dualminer-cgminer && \
     chmod +x autogen.sh configure && \
     ./autogen.sh && \
